@@ -4,7 +4,7 @@
 
 
 /**
- * main - Entry point
+ * main - Prints a quote to the standard output
  *
  * Return: Always 0 (Success)
  */
