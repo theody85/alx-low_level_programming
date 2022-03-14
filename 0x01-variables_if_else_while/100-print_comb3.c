@@ -1,7 +1,7 @@
 # include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Prints the  smallest combination of two digits
  *
  * Return: 0 (Success)
  */
