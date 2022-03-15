@@ -6,3 +6,6 @@ Introduction to the foundations of C, ie. compilation process, authors, etc.
 
 ## 0x01. C - Variables, if, else, while/:
 Introduction to variables, conditions and loops in C
+
+## 0x02. C - Functions, nested loops:
+Introduction to functions and loops in C
