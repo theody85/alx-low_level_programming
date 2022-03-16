@@ -19,6 +19,12 @@ A function that prints the alphabet in lower case 10 times.
 ### 2-main.c:
 Function call for 2-print\_alphabet\_x10.c.
 
+### 3-islower.c:
+A function that checks if a character is lower case
+
+### 3-main.c:
+Function call for 3-islower.c
+
 ### main.h:
 Library or header file for all the created functions.
 
