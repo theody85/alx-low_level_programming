@@ -31,6 +31,12 @@ A function that checks for alphabet characters.
 ### 4-main.c:
 Function call for 4-isalpha.c
 
+### 5-sign.c:
+A function that prints the sign of a number.
+
+### 5-main.c:
+Function call for 5-sign.c.
+
 ### main.h:
 Library or header file for all the created functions.
 
