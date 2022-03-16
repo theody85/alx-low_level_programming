@@ -25,6 +25,12 @@ A function that checks if a character is lower case
 ### 3-main.c:
 Function call for 3-islower.c
 
+### 4-isalpha.c:
+A function that checks for alphabet characters.
+
+### 4-main.c:
+Function call for 4-isalpha.c
+
 ### main.h:
 Library or header file for all the created functions.
 
