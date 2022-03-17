@@ -5,4 +5,7 @@ This section introduces the student to debugging techniques.
 A test for a function that checks and print whether a number is positive or not.
 
 ### main.h:
-The library containing all the functions.
+The library containing all the functions
+
+### 1-main.c:
+Comment out a part in a file to prevent it from entering an infinite loop
