@@ -9,3 +9,6 @@ The library containing all the functions
 
 ### 1-main.c:
 Comment out a part in a file to prevent it from entering an infinite loop
+
+### 2-largest\_number.c:
+Fix the code so the largest of three numbers is printed.
