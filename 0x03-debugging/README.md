@@ -12,3 +12,6 @@ Comment out a part in a file to prevent it from entering an infinite loop
 
 ### 2-largest\_number.c:
 Fix the code so the largest of three numbers is printed.
+
+### 3-print\_remaining\_days.c:
+Prints the remaining days of the week.
