@@ -9,3 +9,9 @@ Introduction to variables, conditions and loops in C
 
 ## 0x02. C - Functions, nested loops:
 Introduction to functions and loops in C
+
+## 0x03. C - Debugging:
+Introduction to debugging techniques in C
+
+## 0x04. C - More functions, more nested loops
+More examples on C functions and nested loops.
