@@ -9,15 +9,17 @@
  */
 void print_rev(char *str)
 {
-	int i = 0;
+	int i = 0, j;
 
 	while (*(str + i) != '\0')
 		i++;
 
-	while (i - 1 >= 0)
+	j = i - 1;
+
+	while (j >= 0)
 	{
-		_putchar(*(str + i));
-		i--;
+		_putchar(str[j]);
+		j--;
 	}
 	_putchar('\n');
 }
