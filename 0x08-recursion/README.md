@@ -3,3 +3,6 @@ Introduction to recursion with C
 
 ### 0-puts\_recursion.c:
 A function that prints a string, followed by a new line.
+
+### 1-print\_rev\_recursion.c:
+A function that prints a string in reverse.
