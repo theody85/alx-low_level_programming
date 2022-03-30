@@ -21,3 +21,6 @@ A function that returns the natural square root of a number.
 
 ### 6-is\_prime\_number.c:
 A function that returns 1 if the input integer is a prime number, otherwise return 0.
+
+### 6-is\_prime\_number.c:
+A function that returns 1 if the input integer is a prime number, otherwise return 0.
