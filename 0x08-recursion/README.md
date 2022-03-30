@@ -27,3 +27,6 @@ A function that returns 1 if the input integer is a prime number, otherwise retu
 
 ### 100-is\_palindrome.c:
 A function that returns 1 if a string is a palindrome and 0 if not.
+
+### 101-wildcmp.c:
+A function that compares two strings and returns 1 if the strings can be considered identical, otherwise return 0.
