@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 int check_if_is_palindrome(char *s, int i, int len);
 int pal_strlen(char *s);
