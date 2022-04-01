@@ -1,8 +1,19 @@
-## 0x09. C - Static libraries
-Introduction to static libraries in C
 
-### libmy.a:
-Static library for task 1
+# Static libraries
 
-### main.h:
-The header file
+Project done during **Full Stack Software Engineering studies** at **ALX School**. It aims to learn about static libraries in **C language**.
+
+## Technologies
+* Scripts written in Bash 4.4.23(2)
+* C files are compiled using `gcc 9.3.0`
+* C files are written according to the C90 standard
+* Tested on Ubuntu 20.04 LTS
+
+## Files
+All of the following files are scripts and programs written in C:
+
+| Filename | Description |
+| -------- | ----------- |
+| `libmy.a` | Static library that contains a lot of functions |
+| `create_static_lib.sh` | Script that creates a static library called `liball.a` from all the `.c` files that are in the current directory |
+| `main.h` | Header file that contains all the prototypes of the used functions |
