@@ -14,6 +14,9 @@ char *_strdup(char *str)
 {
 	unsigned int length;
 	char *dupstr;
+	
+	if (str == NULL)
+		return (NULL);
 
 	length = _strlen(str, 0);
 
@@ -51,6 +54,6 @@ int _dupfill(char *src, char *dest, unsigned int size, unsigned int i)
 unsigned int _strlen(char *str, unsigned int i)
 {
 	if (str[i] == '\0')
-		return (0);
+		return (1);
 	return (1 + _strlen(str, i + 1));
 }
