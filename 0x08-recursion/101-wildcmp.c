@@ -1,4 +1,4 @@
-#include "main.h"
+#include: "main.h"
 
 int strlen_no_wilds(char *str);
 void iterate_wild(char **wildstr);
@@ -14,18 +14,18 @@ int wildcmp(char *s1, char *s2);
 */
 int strlen_no_wilds(char *str)
 {
-int len = 0, index = 0;
+	int len = 0, index = 0;
 
-if (*(str + index))
-{
-if (*str != '*')
-len++;
+	if (*(str + index))
+	{
+		if (*str != '*')
+			len++;
 
-index++;
-len += strlen_no_wilds(str + index);
-}
+		index++;
+		len += strlen_no_wilds(str + index);
+	}
 
-return (len);
+	return (len);
 }
 
 /**
@@ -35,11 +35,11 @@ return (len);
 */
 void iterate_wild(char **wildstr)
 {
-if (**wildstr == '*')
-{
-(*wildstr)++;
-iterate_wild(wildstr);
-}
+	if (**wildstr == '*')
+	{
+		(*wildstr)++;
+		iterate_wild(wildstr);
+	}
 }
 
 /**
