@@ -1,73 +1,44 @@
 #include <stdlib.h>
 
-int str_fill(char *src, char *dest, unsigned int i, unsigned int j, int k);
-unsigned int _strlen(char *s, unsigned int i);
-
 /**
- * string_nconcat - a function that concatenates two strings
- * @s1: string one
- * @s2: string two
- * @n: the length of s2 to be added
+ * *string_nconcat - concatenates n bytes of a string to another string
+ * @s1: string to append to
+ * @s2: string to concatenate from
+ * @n: number of bytes from s2 to concatenate to s1
  *
- * Return: the new concatenated string
+ * Return: pointer to the resulting string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *s;
-	unsigned int len1, len2, len;
+	unsigned int i = 0, j = 0, len1 = 0, len2 = 0;
 
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
+	while (s1 && s1[len1])
+		len1++;
+	while (s2 && s2[len2])
+		len2++;
 
-	len1 = _strlen(s1, 0);
-	len2 = _strlen(s2, 0);
+	if (n < len2)
+		s = malloc(sizeof(char) * (len1 + n + 1));
+	else
+		s = malloc(sizeof(char) * (len1 + len2 + 1));
 
-	if (n >= len2)
-		n = len2;
-
-	len = len1 + n + 1;
-
-	s = malloc(len);
-
-	if (s == NULL)
+	if (!s)
 		return (NULL);
 
-	str_fill(s1, s, 0, len1, 0);
-	str_fill(s2, s, len1, len - 1, 0);
-	s[len] = '\0';
+	while (i < len1)
+	{
+		s[i] = s1[i];
+		i++;
+	}
+
+	while (n < len2 && i < (len1 + n))
+		s[i++] = s2[j++];
+
+	while (n >= len2 && i < (len1 + len2))
+		s[i++] = s2[j++];
+
+	s[i] = '\0';
 
 	return (s);
-
-}
-/**
- * str_fill - copies a string to a new destination
- * @src: the string to be copied
- * @dest: the copied string
- * @i: the start
- * @j: the stop
- * @k: the iterator
- *
- * Return: the copied string
- */
-int str_fill(char *src, char *dest, unsigned int i, unsigned int j, int k)
-{
-	if (i == j)
-		return (1);
-	*(dest + i) = *(src + k);
-	return (1 * str_fill(src, dest, i + 1, j, k + 1));
-}
-/**
- * _strlen - checks for the length of a string
- * @s: the string
- * @i: the iterator
- *
- * Return: the length of the string
- */
-unsigned int _strlen(char *s, unsigned int i)
-{
-	if (*(s + i) == '\0')
-		return (0);
-	return (1 + _strlen(s, i + 1));
 }
