@@ -281,4 +281,5 @@ void free_list_s(shash_node_t *head)
 		free(head);
 		head = temp;
 	}
+	
 }
